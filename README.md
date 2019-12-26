@@ -1,6 +1,6 @@
 # 简介
 
-
+[预览](http://am-file.aijs.club/)
 本文简单介绍如何安装并使用gitbook，最后如何使用docker构建书籍镜像。
 
 1. 前置条件
