@@ -1,4 +1,5 @@
 {
+  "title": "有梦想、心不慌",
   "author" : "hailong.chen",
   "plugins": [
     "pageview-count",
@@ -10,18 +11,17 @@
     "splitter",
     "flexible-alerts",
     "custom-favicon",
-    "change_girls",
     "page-copyright",
     "page-toc-button",
     "emphasize",
-    "lightbox"
+    "lightbox",
+    "todo"
   ],
   "pluginsConfig": {
     "logo": {
-      "rootStyle": "background-color: #2d3143; text-align: center; padding: 20px;",
-      "logo": "https://profile.csdnimg.cn/B/5/2/3_web_longboss",
-      "logoStyle": "width: 70px;",
-      "title": "这是一个文档",
+      "rootStyle": "background-color: #2d3143; text-align: center; padding: 10px;",
+      "logoStyle": "width: 100px;",
+      "title": "有梦想、心不慌",
       "titleStyle": "color: #FFF; text-align: center;",
       "url": "https://github.com/841660202"
     },
@@ -29,12 +29,6 @@
       "url": "https://github.com/841660202"
     },
     "favicon": "https://profile.csdnimg.cn/B/5/2/3_web_longboss",
-    "change_girls" : {
-      "time" : 10,
-      "urls" : [
-          "https://img.infinitynewtab.com/wallpaper/2991.jpg"
-      ]
-    },
     "page-copyright": {
       "description": "modified at",
       "signature": "hailong.chen",

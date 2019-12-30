@@ -189,28 +189,34 @@ mkdir -p Project/{a,b,c,d}/src
 
 docker方式
 ```
-docker build -t gitbook-assets-manage .
-docker run -p 2000:80 --name gitbook-assets-manage  -d gitbook-assets-manage 
+docker build -t gitbook-file .
+docker run -p 2000:80 --name gitbook-file  -d gitbook-file 
 ```
 
 
+```
 server {
-        listen 80;
-        server_name am-file.aijs.club;    # 把域名替换成你自己的
-        location / {
-        proxy_redirect off;
-            proxy_set_header Host $host;
-            proxy_set_header X-Real-IP $remote_addr;
-            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-            proxy_pass http://172.16.232.68:2000;    
-          }
-    }
+      listen 80;
+      server_name am-file.aijs.club;    # 把域名替换成你自己的
+      location / {
+      proxy_redirect off;
+          proxy_set_header Host $host;
+          proxy_set_header X-Real-IP $remote_addr;
+          proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+          proxy_pass http://172.16.232.68:2000;    
+        }
+  }
+```
 
 
-[参考文档](https://www.cnblogs.com/xiaoqi/p/8194350.html)
-[改写Published with GitBook](https://www.jianshu.com/p/9c706dfa2d4e)
+- [参考](https://www.cnblogs.com/xiaoqi/p/8194350.html)
+- [改写](https://www.jianshu.com/p/9c706dfa2d4e)
+- [定制](https://blog.csdn.net/qq_43514847/article/details/86598399)
+- [起源](http://book.5kcrm.com/)
 
-[定制化](https://blog.csdn.net/qq_43514847/article/details/86598399)
 
 
-[起源](http://book.5kcrm.com/)
+```
+scp -r /Users/chenhailong/development/文档/gitbook-file/_book root@47.99.211.128:/root/文档/
+
+```
