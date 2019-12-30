@@ -39,6 +39,7 @@ screenshot
 /scripts/*
 zgen.json
 /build
+_book
 
 
 
