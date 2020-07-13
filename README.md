@@ -217,6 +217,7 @@ server {
 
 
 ```
-scp -r /Users/chenhailong/development/文档/gitbook-file/_book root@47.99.211.128:/root/文档/
+scp -r /Users/chenhailong/mygithub/文档/gitbook-file/_book root@47.99.211.128:/root/文档/
 
 ```
+
